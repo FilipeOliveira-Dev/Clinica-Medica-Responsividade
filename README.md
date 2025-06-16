@@ -3,8 +3,17 @@
 <a target="_blank" href="#">
 <img align="center" src="https://github.com/user-attachments/assets/491b545f-33f6-48c6-9d62-ec4a1df63b38" alt="Logo da 7 Days of Code">
 
-</hr>
-</hr>
+</br>
+
+
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-status:-em-andamento">Status do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-desenvolvedor">Desenvolvedor</a>
+</p>
+
 
 ## 💻 Projeto
 
@@ -13,7 +22,7 @@
 <br>
    <li>Ele consiste em criar uma página de um consultório médico, e foi necessário desenvolver a pagina a partir do projeto enviado pelo no Figma.
 
-## 📌 Status do projeto: Em Andamento
+## 📌 Status: Em Andamento
 
 <li> Day 01 - Mobile First ✅
 <li> Day 02 - Finalizando a versão Mobile
@@ -34,7 +43,7 @@ Projeto desenvolvido utilizando as seguintes tecnologias:
 <li> Mobile First
 <br>
 
-## 📷 Screenshots:
+## 🔖  Layout:
 
 <div align="center">
 <h3>Página completa - Mobile / Tablet / Desktop</h3><br>
