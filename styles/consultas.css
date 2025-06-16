@@ -1,0 +1,123 @@
+/* SECTION CARDS DAS CONSULTAS */
+section h3 {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 16px 8px;
+}
+
+.card__consulta {
+    background-color: var(--color-font-branco);
+    margin: 0 16px 16px 16px;
+    border-radius: 8px;
+}
+
+.card__info {
+    display: flex;
+    padding: 16px 16px 12px 16px;
+    align-items: center;
+}
+
+.card__info-paciente {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__info-paciente h4 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.card__info-paciente p {
+    font-size: 12px;
+    color: var(--color-font-cinza);
+}
+
+.card__info-consulta {
+    display: flex;
+    align-items: center;
+}
+
+.icone__camera {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+  
+    background-color: transparent;
+    background-image: url('/assets/icons/camera.svg');
+}
+
+.icone__chat{
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  border-radius: 50%;
+
+  background: rgba(246, 246, 246, 1);
+  background-image: url('/assets/icons/chat.svg');
+}
+
+.icone__pin {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+  
+    background-color: transparent;
+    background-image: url('/assets/icons/pin.svg');
+}
+
+.icone__camera,
+.icone__chat,
+.icone__pin {
+    border: none;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card__hora {
+    padding: 9px 16px 16px 16px;
+    border-top: 1px solid var(--color-cinzaclaro);
+}
+
+.card__hora span {
+    font-weight: 500;
+    font-size: 12px;
+    
+}
+
+.card__button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__hora button {
+    height: 48px;
+    padding: 13px;
+    margin-top: 8px;
+    border-radius: 8px;
+    
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-principal);
+}
+
+.button__video {
+    width: 139px;
+    background-color: var(--button-laranja);
+    color: var(--color-font-branco);
+    border: none;
+}
+
+.button__audio {
+    width: 139px;
+    background-color: var(--color-font-branco);
+    border: 1px solid var(--color-cinzaclaro);
+    color: var(--color-font-preto);
+}
+
+.button__endereco {
+    background-color: var(--button-azul);
+    color: var(--color-font-branco);
+    border: none;
+    width: 296px;
+}

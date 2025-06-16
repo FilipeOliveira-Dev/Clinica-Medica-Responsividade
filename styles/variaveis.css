@@ -1,0 +1,13 @@
+:root{
+    --font-principal: "Montserrat", sans-serif;
+
+    --color-font-preto: rgba(70, 70, 70, 1);
+    --color-font-cinza: rgba(163, 163, 163, 1);
+    --color-font-branco: rgba(255, 255, 255, 1);
+    --color-cinzaclaro: rgba(246, 246, 246, 1);
+    
+    --button-azul: rgba(72, 148, 255, 1);
+    --button-laranja: rgba(255, 176, 80, 1);
+
+    --transition-hover: 0.4s;
+}

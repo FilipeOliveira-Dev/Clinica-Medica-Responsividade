@@ -1,0 +1,18 @@
+@import url("/styles/variaveis.css");
+@import url("/styles/consultas.css");
+@import url("/styles/header.css");
+
+body {
+  background: linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);
+  font-family: var(--font-principal);
+  color: var(--color-font-preto);
+  font-weight: 400;
+  line-height: 160%;
+}
+
+img {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    border-radius: 50%;
+}

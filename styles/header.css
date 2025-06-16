@@ -1,0 +1,21 @@
+/* HEADER - AVATAR DE PERFIL */
+.header__user {
+    display: flex;
+    align-items: center;
+    margin: 32px 16px 22px 16px;
+}
+
+.header__user img {
+    width: 57px;
+    height: 57px;
+}
+
+.header__info h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.header__info span {
+    font-size: 14px;
+    color: var(--color-font-cinza);
+}
