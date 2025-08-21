@@ -25,7 +25,7 @@
 ## 📌 Status: Em Andamento
 
 <li> Day 01 - Mobile First ✅
-<li> Day 02 - Finalizando a versão Mobile
+<li> Day 02 - Finalizando a versão Mobile ✅
 <li> Day 03 - Unidades relativas e limites de resolução de layout
 <li> Day 04 - Media Queries
 <li> Day 05 - Menu Lateral

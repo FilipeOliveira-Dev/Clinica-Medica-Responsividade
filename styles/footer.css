@@ -11,26 +11,26 @@ footer{
     
 }
 
-.footer_nav{
+.footer__nav{
     display: flex;
     justify-content: space-evenly;
     padding: 12px 0;
 }
 
-.footer_item{
+.footer__item{
     display: flex;
     flex-direction: column;
     align-items: center;   
 }
 
-.footer_item:hover{
+.footer__item:hover{
     color: var(--color-font-preto);
     
     transition: var(--transition-hover);
     cursor: pointer;
 }
 
-.footer_item button {
+.footer__item button {
     width: 24px;
     height: 24px;
 
@@ -40,25 +40,25 @@ footer{
     background-color: transparent;
 }
 
-.footer_item:first-child{
+.footer__item:first-child{
   color: var(--button-azul);
 }
 
-.footer_item-calendario {
+.footer__item-calendario {
     background-image: url('/assets/icons/Calendario-icone.svg');
 }
 
-.footer_item-cliente {
+.footer__item-cliente {
     opacity: 30%;
     background-image: url('/assets/icons/clientes-icone.svg');
 }
 
-.footer_item-relatorio {
+.footer__item-relatorio {
     opacity: 30%;
     background-image: url('/assets/icons/relatorios-icone.svg');
 }
 
-.footer_item-menu {
+.footer__item-menu {
     opacity: 30%;
     background-image: url('/assets/icons/menu-icone.svg');
 }
