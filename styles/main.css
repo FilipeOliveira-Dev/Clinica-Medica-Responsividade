@@ -1,6 +1,7 @@
 @import url("/styles/variaveis.css");
 @import url("/styles/consultas.css");
 @import url("/styles/header.css");
+@import url("/styles/footer.css");
 
 body {
   background: linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);

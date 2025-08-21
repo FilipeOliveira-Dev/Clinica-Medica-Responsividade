@@ -1,0 +1,64 @@
+footer{
+    background-color: white;
+    border-radius: 12px 12px 0 0;
+    height: 60px;
+    font-size: 12px;
+    color: var(--color-font-cinza);
+    position: fixed;
+    bottom: 0;
+    
+    width: 100%;
+    
+}
+
+.footer_nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12px 0;
+}
+
+.footer_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.footer_item:hover{
+    color: var(--color-font-preto);
+    
+    transition: var(--transition-hover);
+    cursor: pointer;
+}
+
+.footer_item button {
+    width: 24px;
+    height: 24px;
+
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.footer_item:first-child{
+  color: var(--button-azul);
+}
+
+.footer_item-calendario {
+    background-image: url('/assets/icons/Calendario-icone.svg');
+}
+
+.footer_item-cliente {
+    opacity: 30%;
+    background-image: url('/assets/icons/clientes-icone.svg');
+}
+
+.footer_item-relatorio {
+    opacity: 30%;
+    background-image: url('/assets/icons/relatorios-icone.svg');
+}
+
+.footer_item-menu {
+    opacity: 30%;
+    background-image: url('/assets/icons/menu-icone.svg');
+}
