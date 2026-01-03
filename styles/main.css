@@ -1,6 +1,7 @@
 @import url("/styles/variaveis.css");
 @import url("/styles/consultas.css");
 @import url("/styles/header.css");
+@import url("/styles/menu-flutuante.css");
 @import url("/styles/footer.css");
 
 body {
@@ -9,6 +10,7 @@ body {
   color: var(--color-font-preto);
   font-weight: 400;
   line-height: 160%;
+  margin-bottom: 60px;
 }
 
 img {
@@ -16,4 +18,9 @@ img {
     height: 32px;
     margin-right: 16px;
     border-radius: 50%;
+}
+
+button{
+  opacity: 90%;
+  cursor: pointer;
 }

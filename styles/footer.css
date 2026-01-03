@@ -6,9 +6,7 @@ footer{
     color: var(--color-font-cinza);
     position: fixed;
     bottom: 0;
-    
     width: 100%;
-    
 }
 
 .footer__nav{
