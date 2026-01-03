@@ -1,0 +1,98 @@
+/* Container principal fixo no canto */
+.fab-container {
+    position: fixed;
+    bottom: 100px;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    z-index: 999;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+}
+
+
+/* Esconde as opções inicialmente */
+.fab-options {
+    position: absolute; /* Agora ele é absoluto em relação ao container */
+    bottom: 170px;      /* Fica exatamente acima do botão principal (56px + gap) */
+    right: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    
+    /* Escondido por padrão */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+/* Quando o botão principal ou qualquer item do container recebe foco, mostra as opções */
+.fab-container:focus-within .fab-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.fab-container:focus-within .overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Estilo dos botões */
+.fab-button {
+  width: 54px;
+  height: 54px;
+  border: none;
+  background-color: var(--button-azul);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.fab-button.small {
+    width: 48px;
+    height: 48px;
+}
+
+/* Estilo da Label (Balãozinho branco) */
+.fab-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.fab-button img {
+  width: 90px;
+  height: 90px;
+  margin-right: 0;
+}
+
+.fab-label {
+    background: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    white-space: nowrap;
+}
