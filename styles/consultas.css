@@ -2,13 +2,17 @@
 section h3 {
     font-weight: 700;
     font-size: 16px;
-    margin: 16px 8px;
+    margin: 8px 16px;
 }
+
+.section__card {
+    margin: 16px;
+} 
 
 .card__consulta {
     background-color: var(--color-font-branco);
-    margin: 0 16px 16px 16px;
     border-radius: 8px;
+    margin-bottom: 16px;
 }
 
 .card__info {
@@ -87,7 +91,8 @@ section h3 {
 
 .card__button {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 18px;
 }
 
 .card__hora button {
@@ -101,15 +106,18 @@ section h3 {
     font-family: var(--font-principal);
 }
 
+.button__video,
+.button__audio {
+    width: 50%;
+}
+
 .button__video {
-    width: 139px;
     background-color: var(--button-laranja);
     color: var(--color-font-branco);
     border: none;
 }
 
 .button__audio {
-    width: 139px;
     background-color: var(--color-font-branco);
     border: 1px solid var(--color-cinzaclaro);
     color: var(--color-font-preto);
@@ -119,5 +127,45 @@ section h3 {
     background-color: var(--button-azul);
     color: var(--color-font-branco);
     border: none;
-    width: 296px;
+    width: 80vh;
+}
+
+/* MEDIA QUEIRE PARA TABLETS - 768px */
+@media (min-width: 768px) {
+    .section__card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 16px 36px;
+        gap: 40px;
+    }
+    
+    section h3 {
+        margin: 8px 36px;
+    }
+
+    .card__consulta {
+        margin-bottom: 0;
+    }
+
+    .button__endereco {
+        width: 50vh;
+    }
+}
+
+/* MEDIA QUEIRE PARA DESKTOP - 1440px */
+@media (min-width: 1440px) {
+    .section__card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 48px 54px 16px 54px;
+        gap: 40px;
+    }
+
+    .card__consulta {
+        margin-bottom: 0;
+    }
+
+    .button__endereco {
+        width: 50vh;
+    }
 }
