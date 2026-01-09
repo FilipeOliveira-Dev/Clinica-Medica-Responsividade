@@ -31,6 +31,9 @@
 <li> Day 05 - Menu Lateral Responsivo ✅
 <li> > <i>Exercício Extra</i> - Todos os Links exibindo alerta ✅
 <li> Day 06 - Cadastro de Consultas ✅
+<li> > <i>Exercício Extra</i> - Adiciona na lista a nova consulta criada ✅
+<li> > <i>Exercício Extra</i> - Validação de formulário
+<li> > <i>Exercício Extra</i> - Inclusão da consulta usando datas reais
 <li> Day 07 - Deploy da página
 
 
