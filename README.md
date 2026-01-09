@@ -29,7 +29,8 @@
 <li> Day 03 - Unidades relativas e limites de resolução de layout ✅
 <li> Day 04 - Media Queries ✅
 <li> Day 05 - Menu Lateral Responsivo ✅
-<li> Day 06 - Cadastro de Consultas
+<li> > <i>Exercício Extra</i> - Todos os Links exibindo alerta ✅
+<li> Day 06 - Cadastro de Consultas ✅
 <li> Day 07 - Deploy da página
 
 

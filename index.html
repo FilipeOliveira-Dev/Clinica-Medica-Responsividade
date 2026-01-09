@@ -45,8 +45,8 @@
                 <div class="card__hora">
                     <span>14:00 - 15:00 (1 hora)</span>
                     <div class="card__button">
-                        <button class="button__video">Ligar por vídeo</button>
-                        <button class="button__audio">Ligar por áudio</button>
+                        <button class="button__video" onclick="ligarPorVideo()">Ligar por vídeo</button>
+                        <button class="button__audio" onclick="ligarPorAudio()">Ligar por áudio</button>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                 <div class="card__hora">
                     <span>16:00 - 17:00 (1 hora)</span>
                     <div class="card__button">
-                        <button class="button__endereco">Ver endereço</button>
+                        <button class="button__endereco" onclick="verEndereco()">Ver endereço</button>
                     </div>
                 </div>
             </div>
@@ -88,8 +88,8 @@
                 <div class="card__hora">
                     <span>17:20 - 18:00 (40 minutos)</span>
                     <div class="card__button">
-                        <button class="button__video">Ligar por vídeo</button>
-                        <button class="button__audio">Ligar por áudio</button>
+                        <button class="button__video" onclick="ligarPorVideo()">Ligar por vídeo</button>
+                        <button class="button__audio" onclick="ligarPorAudio()">Ligar por áudio</button>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                 <div class="card__hora">
                     <span>18:00 - 19:00 (1 hora)</span>
                     <div class="card__button">
-                        <button class="button__endereco">Ver endereço</button>
+                        <button class="button__endereco" onclick="verEndereco()">Ver endereço</button>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@
                 <div class="card__hora">
                     <span>18:00 - 19:00 (1 hora)</span>
                     <div class="card__button">
-                        <button class="button__endereco">Ver endereço</button>
+                        <button class="button__endereco" onclick="verEndereco()">Ver endereço</button>
                     </div>
                 </div>
             </div>
@@ -159,8 +159,8 @@
                 <div class="card__hora">
                     <span>14:00 - 15:00 (1 hora)</span>
                     <div class="card__button">
-                        <button class="button__video">Ligar por vídeo</button>
-                        <button class="button__audio">Ligar por áudio</button>
+                        <button class="button__video" onclick="ligarPorVideo()">Ligar por vídeo</button>
+                        <button class="button__audio" onclick="ligarPorAudio()">Ligar por áudio</button>
                     </div>
                 </div>
             </div>
@@ -181,8 +181,8 @@
                 <div class="card__hora">
                     <span>17:20 - 18:00 (40 minutos)</span>
                     <div class="card__button">
-                        <button class="button__video">Ligar por vídeo</button>
-                        <button class="button__audio">Ligar por áudio</button>
+                        <button class="button__video" onclick="ligarPorVideo()">Ligar por vídeo</button>
+                        <button class="button__audio" onclick="ligarPorAudio()">Ligar por áudio</button>
                     </div>
                 </div>
             </div>
@@ -203,7 +203,7 @@
                 <div class="card__hora">
                     <span>16:00 - 17:00 (1 hora)</span>
                     <div class="card__button">
-                        <button class="button__endereco">Ver endereço</button>
+                        <button class="button__endereco" onclick="verEndereco()">Ver endereço</button>
                     </div>
                 </div>
             </div>
@@ -232,7 +232,7 @@
                 <div class="card__hora">
                     <span>18:00 - 19:00 (1 hora)</span>
                     <div class="card__button">
-                        <button class="button__endereco">Ver endereço</button>
+                        <button class="button__endereco" onclick="verEndereco()">Ver endereço</button>
                     </div>
                 </div>
             </div>
@@ -253,8 +253,8 @@
                 <div class="card__hora">
                     <span>14:00 - 15:00 (1 hora)</span>
                     <div class="card__button">
-                        <button class="button__video">Ligar por vídeo</button>
-                        <button class="button__audio">Ligar por áudio</button>
+                        <button class="button__video" onclick="ligarPorVideo()">Ligar por vídeo</button>
+                        <button class="button__audio" onclick="ligarPorAudio()">Ligar por áudio</button>
                     </div>
                 </div>
             </div>
@@ -275,8 +275,8 @@
                 <div class="card__hora">
                     <span>17:20 - 18:00 (40 minutos)</span>
                     <div class="card__button">
-                        <button class="button__video">Ligar por vídeo</button>
-                        <button class="button__audio">Ligar por áudio</button>
+                        <button class="button__video" onclick="ligarPorVideo()">Ligar por vídeo</button>
+                        <button class="button__audio" onclick="ligarPorAudio()">Ligar por áudio</button>
                     </div>
                 </div>
             </div>
@@ -297,7 +297,7 @@
                 <div class="card__hora">
                     <span>16:00 - 17:00 (1 hora)</span>
                     <div class="card__button">
-                        <button class="button__endereco">Ver endereço</button>
+                        <button class="button__endereco" onclick="verEndereco()">Ver endereço</button>
                     </div>
                 </div>
             </div>
@@ -310,14 +310,14 @@
         <div class="fab-options">
             <div class="fab-item">
                 <span class="fab-label">Nova consulta na casa do paciente</span>
-                <button class="fab-button small">
+                <button class="fab-button small" onclick="novaConsultaPresencial()">
                     <img src="/assets/icons/pin-fab.svg" alt="Pin"> 
                 </button>
             </div>
 
             <div class="fab-item">
                 <span class="fab-label">Nova consulta por vídeo</span>
-                <button class="fab-button small">
+                <button class="fab-button small" onclick="novaConsultaVirtual()">
                     <img src="/assets/icons/camera-fab.svg" alt="Vídeo">
                 </button>
             </div>
@@ -330,27 +330,69 @@
 </div>
 
 
+    <!-- FORMULÁRIO - CADASTRO DE CONSULTA -->
+    <section class="formulario__cadastro">
+            <h2>Agendar Nova Consulta</h2>
+        
+            <form action="#" method="post">
+                
+                <div class="campo">
+                    <label for="nome">Nome do Paciente:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome completo" required>
+                </div>
+
+                <div class="consulta">
+                    <div class="campo">
+                        <label for="tipo">Tipo de Consulta:</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">Selecione uma opção...</option>
+                            <option value="presencial">Presencial</option>
+                            <option value="virtual">Virtual</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="data">Data da Consulta:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <div class="campo">
+                        <label for="hora">Horário da Consulta:</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>        
+                </div>
+
+                <div class="campo">
+                    <label for="obs">Observações:</label>
+                    <textarea id="obs" name="obs" rows="10" placeholder="Alguma recomendação especial?"></textarea>
+                </div>
+
+                <div class="campo">
+                    <button type="submit" class="submit__button" onclick="salvarConsulta()">Salvar Nova Consulta</button>
+                </div>
+
+            </form>
+    </section>
+
     <footer>    
         <nav class="footer__nav">
-            <div class="footer__item">
+            <div class="footer__item" onclick="menuConsultas()">
                 <button class="footer__item-calendario"><a href="#"></a></button>
                 <p>Consultas</p>
             </div>
-            <div class="footer__item">
+            <div class="footer__item" onclick="menuClientes()">
                 <button class="footer__item-cliente"><a href="#"></a></button>
                 <p>Clientes</p>
             </div>
-            <div class="footer__item">
+            <div class="footer__item" onclick="menuRelatorios()">
                 <button class="footer__item-relatorio"><a href="#"></a></button>
                 <p>Relatórios</p>
             </div>
-            <div class="footer__item">
+            <div class="footer__item" onclick="abrirMenu()">
                 <button class="footer__item-menu"><a href="#"></a></button>
                 <p>Menu</p>
             </div>
         </nav>
     </footer>
     
-    
+    <script src="/script/main.js"></script>
 </body>
 </html>

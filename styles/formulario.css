@@ -1,0 +1,87 @@
+.formulario__cadastro{
+    display: none;
+}
+
+@media (min-width: 1440px) {
+    .formulario__cadastro{
+        display: block;
+        background-color: var(--color-cinzaclaro);
+        margin: 54px;
+        padding: 4rem;
+        border-radius: 80px;
+    }
+
+    .formulario__cadastro h2{
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 3rem;
+    }
+
+    .campo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        color: var(--color-font-cinza);
+    }
+
+    #nome,
+    #obs, 
+    #tipo,
+    #data,
+    #hora {
+        height: 56px;
+        border-radius: 8px;
+        font-size: 16px;
+        padding: 0 1rem;
+        border: 1px solid var(--color-cinzaclaro);
+    }
+
+    #nome::placeholder,
+    #obs::placeholder {
+        font-family: var(--font-principal);
+        color: var(--color-font-cinza);
+        font-size: 16px;
+        
+    }
+
+    #tipo,
+    #obs {
+        font-family: var(--font-principal);
+        color: var(--color-font-preto);
+        padding: 16px;
+    }
+
+    #data,
+    #hora {
+        font-family: var(--font-principal);
+        color: var(--color-font-preto);
+        padding: 0 16px;
+    }
+
+    #nome:focus,
+    #obs:focus,
+    #tipo:focus {
+        border: 1px solid var(--button-azul);
+        font-family: var(--font-principal);
+        color: var(--color-font-preto);
+    }
+ 
+    .consulta{    
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 100px;
+    }
+
+    .submit__button{
+        width: 30%;
+        height: 56px;
+        border-radius: 8px;
+        border: 1px solid #4894FF;
+        background-color: var(--button-azulescuro);
+        color: var(--color-font-branco);
+        align-self: center;
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+    }
+
+}

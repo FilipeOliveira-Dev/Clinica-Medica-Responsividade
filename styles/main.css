@@ -3,6 +3,7 @@
 @import url("/styles/header.css");
 @import url("/styles/menu-flutuante.css");
 @import url("/styles/footer.css");
+@import url("/styles/formulario.css");
 
 body {
   background: linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);
@@ -28,7 +29,6 @@ button{
 button:hover{
   opacity: 100%;
   transition: var(--transition-hover);
-  font-weight: 700;
 }
 
 

@@ -96,3 +96,10 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     white-space: nowrap;
 }
+
+
+@media (min-width: 1440px) {
+    .fab-container{
+        display: none;
+    }
+}

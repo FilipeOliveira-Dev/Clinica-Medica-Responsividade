@@ -8,6 +8,7 @@
     
     --button-azul: rgba(72, 148, 255, 1);
     --button-laranja: rgba(255, 176, 80, 1);
+    --button-azulescuro: #4062C9;
 
-    --transition-hover: 0.4s;
+    --transition-hover: 0.6s;
 }
