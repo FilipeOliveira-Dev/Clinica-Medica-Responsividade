@@ -10,7 +10,7 @@ body {
   color: var(--color-font-preto);
   font-weight: 400;
   line-height: 160%;
-  margin-bottom: 60px;
+  margin-bottom: 5.5rem;
 }
 
 img {
@@ -23,4 +23,24 @@ img {
 button{
   opacity: 90%;
   cursor: pointer;
+}
+
+button:hover{
+  opacity: 100%;
+  transition: var(--transition-hover);
+  font-weight: 700;
+}
+
+
+@media (min-width: 768px) {
+    body{
+        margin: 0 0 0 20%;
+    }
+}
+
+/* MEDIA QUEIRE PARA TABLETS - 1440px */
+@media (min-width: 1440px) {
+    body{
+        margin-left: 16%;
+    }
 }

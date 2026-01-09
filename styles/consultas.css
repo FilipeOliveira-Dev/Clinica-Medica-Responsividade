@@ -134,7 +134,7 @@ section h3 {
 @media (min-width: 768px) {
     .section__card {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         margin: 16px 36px;
         gap: 40px;
     }
@@ -155,17 +155,7 @@ section h3 {
 /* MEDIA QUEIRE PARA DESKTOP - 1440px */
 @media (min-width: 1440px) {
     .section__card {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         margin: 48px 54px 16px 54px;
-        gap: 40px;
-    }
-
-    .card__consulta {
-        margin-bottom: 0;
-    }
-
-    .button__endereco {
-        width: 50vh;
     }
 }

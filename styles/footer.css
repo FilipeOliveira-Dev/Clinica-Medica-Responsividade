@@ -1,7 +1,7 @@
 footer{
     background-color: white;
     border-radius: 12px 12px 0 0;
-    height: 60px;
+    height: 5rem;
     font-size: 12px;
     color: var(--color-font-cinza);
     position: fixed;
@@ -21,25 +21,20 @@ footer{
     align-items: center;   
 }
 
-.footer__item:hover{
-    color: var(--color-font-preto);
-    
+.footer__item:hover {
+    color: var(--button-azul);
     transition: var(--transition-hover);
+    font-weight: 700;
     cursor: pointer;
 }
 
 .footer__item button {
-    width: 24px;
-    height: 24px;
-
+    width: 2rem;
+    height: 2rem;
     border: none;
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
-}
-
-.footer__item:first-child{
-  color: var(--button-azul);
 }
 
 .footer__item-calendario {
@@ -59,4 +54,40 @@ footer{
 .footer__item-menu {
     opacity: 30%;
     background-image: url('/assets/icons/menu-icone.svg');
+}
+
+
+/* MEDIA QUEIRE PARA TABLETS - 768px */
+@media (min-width: 768px) {
+    footer{
+        font-size: 16px;
+        position: fixed;
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 18%;
+    }
+
+    .footer__nav {
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 16px;
+    }
+
+      .footer__item {
+        flex-direction: row;
+        gap: 12px;
+    }
+}
+
+/* MEDIA QUEIRE PARA TABLETS - 1440px */
+@media (min-width: 1440px) {
+    footer{
+        font-size: 18px;
+        width: 15%;
+    }
+
+    .footer__nav {
+        padding: 32px 16px;
+    }
 }
