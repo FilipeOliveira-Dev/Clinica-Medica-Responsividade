@@ -1,27 +1,109 @@
 .formulario__cadastro{
-    display: none;
+    background-color: var(--color-cinzaclaro);
+    margin: 16px;
+    padding: 1rem;
+    border-radius: 36px;
+}
+
+.formulario__cadastro h2{
+    font-weight: 700;
+    font-size: 19px;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    color: var(--color-font-cinza);
+}
+
+#nome,
+#obs, 
+#tipo,
+#data,
+#hora {
+    height: 56px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 0 1rem;
+    border: 1px solid var(--color-cinzaclaro);
+}
+
+#nome::placeholder,
+#obs::placeholder {
+    font-family: var(--font-principal);
+    color: var(--color-font-cinza);
+    font-size: 12px;
+    
+}
+
+#tipo,
+#obs {
+    font-family: var(--font-principal);
+    color: var(--color-font-preto);
+    padding: 16px;
+}
+
+#data,
+#hora {
+    font-family: var(--font-principal);
+    color: var(--color-font-preto);
+    padding: 0 16px;
+}
+
+#nome:focus,
+#obs:focus,
+#tipo:focus {
+    border: 1px solid var(--button-azul);
+    font-family: var(--font-principal);
+    color: var(--color-font-preto);
+}
+
+.submit__button{
+    width: 80%;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #4894FF;
+    background-color: var(--button-azulescuro);
+    color: var(--color-font-branco);
+    align-self: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .formulario__cadastro{
+        margin: 36px;
+    }
+
+    .formulario__cadastro h2{
+        font-size: 22px;
+    }
+
+    #nome::placeholder,
+    #obs::placeholder {
+        font-size: 14px;   
+    }
+
+    .submit__button{
+        width: 50%;
+        font-size: 1.2rem;
+    }
 }
 
 @media (min-width: 1440px) {
     .formulario__cadastro{
-        display: block;
-        background-color: var(--color-cinzaclaro);
         margin: 54px;
         padding: 4rem;
         border-radius: 80px;
     }
 
     .formulario__cadastro h2{
-        font-weight: 700;
         font-size: 24px;
+        text-align: left;
         margin-bottom: 3rem;
-    }
-
-    .campo{
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
-        color: var(--color-font-cinza);
     }
 
     #nome,
@@ -29,59 +111,23 @@
     #tipo,
     #data,
     #hora {
-        height: 56px;
-        border-radius: 8px;
         font-size: 16px;
-        padding: 0 1rem;
-        border: 1px solid var(--color-cinzaclaro);
     }
-
+    
     #nome::placeholder,
     #obs::placeholder {
-        font-family: var(--font-principal);
-        color: var(--color-font-cinza);
-        font-size: 16px;
-        
+        font-size: 16px;   
     }
 
-    #tipo,
-    #obs {
-        font-family: var(--font-principal);
-        color: var(--color-font-preto);
-        padding: 16px;
-    }
-
-    #data,
-    #hora {
-        font-family: var(--font-principal);
-        color: var(--color-font-preto);
-        padding: 0 16px;
-    }
-
-    #nome:focus,
-    #obs:focus,
-    #tipo:focus {
-        border: 1px solid var(--button-azul);
-        font-family: var(--font-principal);
-        color: var(--color-font-preto);
-    }
- 
     .consulta{    
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         gap: 100px;
     }
-
+    
     .submit__button{
         width: 30%;
-        height: 56px;
-        border-radius: 8px;
-        border: 1px solid #4894FF;
-        background-color: var(--button-azulescuro);
-        color: var(--color-font-branco);
-        align-self: center;
         font-size: 1.3rem;
         margin-top: 1.5rem;
     }
-
 }

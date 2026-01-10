@@ -5,45 +5,55 @@ const data = document.getElementById('data');
 const horario = document.getElementById('hora');
 const observacoes = document.getElementById('obs');
 
+const consultas = document.querySelectorAll('.section__hoje .card__consulta');
+const totalDeConsultas = consultas.length;
+const headerQtdeConsultas = document.querySelector('.header__info span');
+headerQtdeConsultas.innerHTML = `Consultas Hoje: ${totalDeConsultas}`;
+
+const campoDataHoje = document.querySelector('.data__hoje')
+const campoDataAmanha = document.querySelector('.data__amanha')
+campoDataHoje.innerHTML = `Hoje: ${new Date().toLocaleDateString('pt-BR')}`;
+campoDataAmanha.innerHTML = `Amanhã: ${new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toLocaleDateString('pt-BR')}`;
+
 // BUTTON - LIGAÇÃO
 function ligarPorVideo() {
-    alert("Botao Ligar por Video pressionado!")
+    alert("Ligar por Video")
 }
 
 function ligarPorAudio() {
-    alert("Botao Ligar por Áudio pressionado!")
+    alert("Ligar por Áudio")
 }
 
 function verEndereco(){
-    alert("Botao Ver Endereço pressionado!")
+    alert("Endereço do Paciente")
 }
 
 
 // MENU FLUTUANTE - BUTTON NOVA CONSULTA
 function novaConsultaPresencial() {
-    alert("Botao Nova Consulta Presencial pressionado!")
+    alert("Agendar Nova Consulta Presencial");
 }
 
 function novaConsultaVirtual() {
-    alert("Botao Nova Consulta Virtual pressionado!")
+    alert("Agendar Nova Consulta Virtual");
 }
 
 
 // BUTTON - MENU DE OPÇÕES
 function menuConsultas() {
-    alert("Botao Consultas pressionado!")
+    alert("Consultas Agendadas")
 }
 
 function menuClientes() {
-    alert("Botao Clientes pressionado!")
+    alert("Meus Clientes")
 }
 
 function menuRelatorios() {
-    alert("Botao Relatórios pressionado!")
+    alert("Relatórios das Consultas")
 }
 
 function abrirMenu() {
-    alert("Botao Menu pressionado!")
+    alert("Menu de Opções")
 }
 
 
@@ -55,11 +65,9 @@ formularioCadastro.addEventListener('submit', function(event) {
     const dataConsulta = data.value;
     const horarioConsulta = horario.value;
     const obsDoPaciente = observacoes.value;
-        
+
     inserirConsultaNaLista(nomePaciente, tipoConsulta, dataConsulta, horarioConsulta, obsDoPaciente);
-
 });
-
 
 
 function inserirConsultaNaLista(nome, tipo, data, horario, observacoes) {
@@ -112,4 +120,15 @@ function inserirConsultaNaLista(nome, tipo, data, horario, observacoes) {
         </div>`;
 
     document.querySelector(".section__proximo-mes").appendChild(novaConsulta);
+    alert("Consulta agendada com sucesso!");
+
+    limparFormulario();
+}
+
+function limparFormulario() {
+    nome.value = "";
+    tipo.value = "";
+    data.value = "";
+    horario.value = "";
+    observacoes.value = "";
 }

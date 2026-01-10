@@ -98,6 +98,16 @@
 }
 
 
+@media (min-width: 768px) {
+    .fab-container{
+        bottom: 30px;
+    }
+    
+    .fab-options {
+        bottom: 100px;      /* Fica exatamente acima do botão principal (56px + gap) */
+}
+}
+
 @media (min-width: 1440px) {
     .fab-container{
         display: none;

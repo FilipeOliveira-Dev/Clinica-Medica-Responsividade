@@ -156,6 +156,7 @@ section h3 {
 @media (min-width: 1440px) {
     .section__card {
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        margin: 48px 54px 16px 54px;
+        margin: 16px 36px;
     }
+
 }
